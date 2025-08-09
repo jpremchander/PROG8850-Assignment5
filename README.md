@@ -7,16 +7,6 @@
 ## Overview
 This assignment analyzes database performance improvements through strategic indexing using the Brazilian E-commerce dataset (~100,000 orders). We test scalar field queries and full-text searches, measuring execution times before and after implementing indexes.
 
-## Assignment Requirements
-✅ **Creating the database** (1 point)  
-✅ **Loading CSV data** (2 points)  
-✅ **Tests of scalar fields like amounts** (2 points)  
-✅ **Tests of full text searches** (2 points)  
-✅ **Creating indices** (2 points)  
-✅ **Explanation of searches, goals and outcomes of indexing** (1 point)
-
-## Quick Start
-
 ### Prerequisites
 
 - **Docker Desktop** installed and running
@@ -480,7 +470,7 @@ Get-Content ecommerce_schema.sql | docker exec -i prog8850-assignment5-db-1 mysq
 python docker_performance_tester.py
 ```
 
-### What You'll See
+### Outputs
 - ✅ Database connection and sample data creation
 - 📊 Performance tests BEFORE indexing (slower queries)
 - 🏗️ Index creation process
