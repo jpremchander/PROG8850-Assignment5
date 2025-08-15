@@ -1,7 +1,7 @@
 # Assignment 5 - Database Indexing Performance Analysis
 **PROG8850 - Database Automation**  
-**Student:** [Your Name]  
-**Date:** August 9, 2025
+**Student:** Prem Chander (9015480)  / Rishi Patel 8972657
+**Date:** August 15, 2025
 
 ## Executive Summary
 

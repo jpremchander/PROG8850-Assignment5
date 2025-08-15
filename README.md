@@ -1,8 +1,9 @@
 # Assignment 5 - Database Indexing Performance Analysis
 **PROG8850 - Database Automation**
 
-**Student Name:** Prem Chander  
-**Student ID:** 9015480
+**Students:**  
+• Prem Chander J — Student ID: 9015480  
+• Rishi Patel — Student ID: 8972657
 
 ## Overview
 This assignment analyzes database performance improvements through strategic indexing using the Brazilian E-commerce dataset (~100,000 orders). We test scalar field queries and full-text searches, measuring execution times before and after implementing indexes.
@@ -370,6 +371,74 @@ See `ANALYSIS_REPORT.md` for:
 - Business stakeholder impact assessment
 - Technical recommendations
 - Case study examples
+
+## Screenshots
+
+The following screenshots are included to support the submission:
+
+1. Docker containers running (MySQL and Adminer)
+
+  ![Docker containers](screenshots/docker-ps.png)
+
+2. Ecommerce database and tables present in MySQL
+
+  ![Ecommerce DB tables](screenshots/e-commerce-db.png)
+
+3. Index creation success (all indexes created)
+
+  ![Index creation](screenshots/Create_Index_Performance_Testing.png)
+
+4. Final performance comparison (before vs after with % improvement)
+
+  ![Performance comparison](screenshots/Performance_Comparision_1.png)
+
+### More screenshots to capture (recommended)
+
+If you can add 1–4 more, these make grading easier:
+
+3. Index creation success messages  
+  Save as: `screenshots/index-creation.png`
+
+4. BEFORE indexing section with an EXPLAIN showing type = ALL  
+  Save as: `screenshots/before-indexing.png`
+
+5. AFTER indexing section with an EXPLAIN showing index/range usage  
+  Save as: `screenshots/after-indexing.png`
+
+6. Final performance comparison summary (percent improvements)  
+  Save as: `screenshots/performance-comparison.png`
+
+Tip: Run `python docker_performance_tester.py`, then capture the console at these milestones.
+
+## Submission (ZIP) Guide
+
+Your professor requested a single ZIP with documentation, scripts, and screenshots. Suggested structure:
+
+```
+PROG8850-Assignment5.zip
+  ├─ README.md
+  ├─ ANALYSIS_REPORT.md
+  ├─ ecommerce_schema.sql
+  ├─ docker_performance_tester.py
+  ├─ performance_tester.py
+  ├─ sqlite_performance_tester.py
+  ├─ test_connection.py
+  ├─ requirements.txt
+  ├─ mysql-adminer.yml
+  └─ screenshots/
+     ├─ docker-ps.png
+     ├─ e-commerce-db.png
+     ├─ index-creation.png           (recommended)
+     ├─ before-indexing.png          (recommended)
+     ├─ after-indexing.png           (recommended)
+     └─ performance-comparison.png   (recommended)
+```
+
+On Windows PowerShell, you can create the ZIP from the repo root with:
+
+```powershell
+Compress-Archive -Path * -DestinationPath PROG8850-Assignment5.zip -Force
+```
 
 ## Marking
 
